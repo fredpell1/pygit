@@ -16,7 +16,12 @@ def compress_file(filename:str):
     compressed = compress_content(f.read())
   return compressed
 
-
+#unsure about this
+def decompress_file(filename:bytes):
+  decompressed = decompress_content(filename)
+  with open(decompressed) as f:
+    text = f.read()
+  return text
 
 
 
