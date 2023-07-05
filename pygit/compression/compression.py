@@ -16,11 +16,7 @@ def compress_file(filename:str):
     compressed = compress_content(f.read())
   return compressed
 
-content = 'blob 16\u0000what is up, doc?'.encode('utf-8')
-print(compress_content(content))
-temp = compress_content(content)
-print(type(temp))
-print(decompress_content(temp))
+
 
 
 
